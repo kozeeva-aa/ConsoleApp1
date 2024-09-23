@@ -11,7 +11,7 @@ class ProgramCalc
     static void Main()
     {
         Console.WriteLine("Введите первое число:");
-        string input1 = Console.ReadLine();
+        string? input1 = Console.ReadLine();
         //double num1 = double.Parse(Console.ReadLine());
         if (!double.TryParse(input1, out double num1))
         {
@@ -30,7 +30,7 @@ class ProgramCalc
 
         Console.Write("Введите второе число: ");
         Console.WriteLine();
-        string input2 = Console.ReadLine();
+        string? input2 = Console.ReadLine();
         if (!double.TryParse(input2, out double num2))
         {
             Console.WriteLine("Ошибка: введенное значение не является числом.");
